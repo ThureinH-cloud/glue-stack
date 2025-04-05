@@ -8,7 +8,7 @@ export default function Index() {
         justifyContent:"center",
         alignItems:"center",
     }}>
-        <Text className='font-bold'>Thurein</Text>
+        <Text className='font-bold'>Javascript</Text>
     </View>
   )
 }
