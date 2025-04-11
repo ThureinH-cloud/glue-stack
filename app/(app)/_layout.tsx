@@ -43,7 +43,12 @@ export default function RootLayout() {
     //   <StatusBar style="auto" />
     // </ThemeProvider>
     <Stack>
-      <Stack.Screen name="(tabs)" />
+      <Stack.Screen
+        name="(tabs)"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 }
