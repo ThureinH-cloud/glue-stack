@@ -1,10 +1,24 @@
+import { Link, useRouter } from "expo-router";
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
 export default function Profile() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
-      <Text>Profile</Text>
+      <Text>profile</Text>
+      {/* <Button
+        title="Profile"
+        onPress={() =>
+          router.navigate({
+            pathname: "/profile",
+            params: {
+              info: 1,
+            },
+          })
+        }
+      ></Button> */}
+      <Link href={"/profile/112"}> Go to profile</Link>
     </View>
   );
 }
