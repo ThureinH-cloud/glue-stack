@@ -19,6 +19,11 @@ export default function Profile() {
         }
       ></Button> */}
       <Link href={"/profile/112"}> Go to profile</Link>
+      <Link href={"/login"} replace>
+        {" "}
+        Logout{" "}
+      </Link>
+      <Button title="Logout" onPress={() => router.replace("/login")} />
     </View>
   );
 }
